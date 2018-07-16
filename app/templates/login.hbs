@@ -1,0 +1,16 @@
+<h1> Login here </h1>
+<form {{ action "login" model on="submit"}} >
+  <div class="container">
+    <label for="emp_id"><b>Employee Id</b></label>
+    {{input type="text" placeholder="Enter Employee Id" valueBinding="model.emp_id" }}
+    <br>
+    <label for="password"><b>Password</b></label>
+    {{input type="password" placeholder="Enter Password" valueBinding="model.password" }}
+
+    <br>
+    <div class="clearfix">
+
+      <button type="submit" class="Login">Login</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,29 @@
+<h1>Hi, Signup here </h1>
+<form {{ action "createUser" on="submit"}} >
+  <div class="container">
+
+    <label for="firstname"><b>First name</b></label>
+    {{input type="text" placeholder="Enter first name" valueBinding="first_name"}}
+    <br>
+    <label for="last_name"><b>Last name</b></label>
+    {{input type="text" placeholder="Enter last name" valueBinding="last_name" }}
+    <br>
+    <label for="emp_id"><b>Employee Id</b></label>
+    {{input type="text" placeholder="Enter Employee Id" valueBinding="emp_id" }}
+    <br>
+    <label for="password"><b>Password</b></label>
+    {{input type="password" placeholder="Enter Password" valueBinding="password" }}
+    <i>your password is your department's secret key</i>
+    <br>
+    <
+
+
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+
+      <button type="submit" class="signup">Sign Up</button>
+    </div>
+  </div>
+</form>
