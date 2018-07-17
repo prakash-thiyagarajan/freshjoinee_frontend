@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import Service from '@ember/service'
+//import Service from '@ember/service'
 
 export default Route.extend({
   model()

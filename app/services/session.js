@@ -45,7 +45,7 @@ export default Service.extend({
 
   logoutDidSucceed: function() {
     this.set('sessionData', null);
-    console.log("logoutDidSucceed")
+    //console.log("logoutDidSucceed")
 
   }
 });

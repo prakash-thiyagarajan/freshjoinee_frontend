@@ -8,9 +8,8 @@ export default Route.extend({
 	 model: function() {
      if (this.get('session').getSessionData())
        {this.transitionTo('view')
-        alert('Please log out to go back ')}
-     else {
-     }
+        alert('Please log out to move to Login page ')}
+
 
     return {};
   },
@@ -29,7 +28,7 @@ export default Route.extend({
     if (transition) {
       transition.retry();
     } else {
-      console.log("im called")
+      //console.log("im called")
       this.transitionTo('view');
     }
   },
