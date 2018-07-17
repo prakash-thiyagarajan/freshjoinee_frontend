@@ -3,11 +3,12 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
   model()
-  { if (this.get('session').getSessionData())
+  { /*if (this.get('session').getSessionData())
     console.log("1");
     else {
+      alert("Please login to enter this page")
       this.transitionTo('login')
-    }
-    return this.store.findAll('user');
+    }*/
+    return this.store.findAll('contact');
   }
 });

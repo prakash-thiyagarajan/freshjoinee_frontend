@@ -1,13 +1,10 @@
 {{#if session.isAuthenticated}}
 <h1>Hi Welcome to Freshworks</h1>
 {{#link-to "next"}}next{{/link-to}}
-{{#each model as |user|}}
-  {{user.first_name}}
-  {{user.last_name}}
-  {{user.emp_id}}
-  {{user.password}}
+{{#each model as |contact|}}
+  {{contact.phone}}
+  {{contact.user_id}}
+
   <br>
 {{/each}}
-
-
 {{/if}}
